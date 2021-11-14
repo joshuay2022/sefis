@@ -1,0 +1,44 @@
+PROG = sefis.exe
+MY_CONSOLE = 1
+
+CURRENT_OBJS = \
+  $O\sefis.obj \
+
+COMPRESS_OBJS = \
+  $O\com7z.obj \
+
+CRYPTO_OBJS = \
+  $O\crypto.obj \
+
+STRING_OBJS = \
+  $O\ConvertString.obj \
+
+PRINT_OBJS = \
+  $O\Print_Show.obj \
+
+SSL_ODJS = \
+  $O\aes.obj \
+  $O\sha.obj \
+
+COMMON_OBJS = \
+  $O\IntToString.obj \
+  $O\NewHandler.obj \
+  $O\MyString.obj \
+  $O\StringConvert.obj \
+  $O\StringToInt.obj \
+  $O\MyVector.obj \
+  $O\Wildcard.obj \
+
+WIN_OBJS = \
+  $O\DLL.obj \
+  $O\FileDir.obj \
+  $O\FileFind.obj \
+  $O\FileIO.obj \
+  $O\FileName.obj \
+  $O\PropVariant.obj \
+  $O\PropVariantConv.obj \
+
+7ZIP_COMMON_OBJS = \
+  $O\FileStreams.obj \
+
+!include "./jy.mak"
